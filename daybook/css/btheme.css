@@ -1,0 +1,371 @@
+/*CSS Basmah Theme*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* new clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*My CSS Starts Here*/
+#wrapper{
+	width:70.27%;
+	margin:0 auto;
+}
+
+p{
+	font-family: 'Abel', Arial, sans-serif;
+	font-size:1.25em;
+	line-height:1.875em;
+	margin-top:10px;
+}
+
+h1,h2,h3{
+	font-family: 'Dancing Script', cursive;
+}
+
+img{
+	max-width:100%;
+}
+
+header{
+	text-align:center;
+	height:190px;
+	line-height:190px;
+}
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+
+li{
+	list-style-type:none;
+}
+
+.header-text{
+	font-size:7.5em;
+}
+
+.post-title{
+	text-align:center;
+	font-size:1.5625em;
+	margin-bottom:10px;
+}
+
+.main{
+	width:62.5%;
+	margin-left:1.055%;
+	margin-right:4.22%;
+	float:left;
+}
+
+.page-content{
+	width:62.5%;
+	margin-left:1.055%;
+	margin-right:4.22%;
+	float:left;
+}
+
+.post-link{
+	height:30px;
+	line-height:30px;
+	/*width:13.33%;*/
+	display:block;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:1.125em;
+	float:right;
+	margin:5px 0;
+}
+
+.post-link.two{
+	float:left;
+}
+
+.post-link:hover{
+	font-family: 'Josefin Sans', sans-serif;
+	color:#fa8dfe;
+}
+
+.content-container{
+	margin: 0 0 10px 0;
+}
+
+.side{
+	width:29.16%;
+	margin-top:35px;
+	margin-right:1.055%;
+	float:left;
+}
+
+.side-title{
+	font-size:2.5em;
+	text-align:center;
+	margin-top:20px;
+}
+
+.blurb{
+	font-size:1.0625em;
+	line-height:1.5625em;
+}
+
+.author-img{
+	border-radius:300px;
+	height:auto;
+}
+
+.side-links{
+	display:block;
+	height:30px;
+	line-height:30px;
+}
+
+.side-links ul li a{
+	width:33.33%;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 5px 0 5px 0;
+}
+
+.side-links ul li a:hover{
+	font-family: 'Josefin Sans', sans-serif;
+	color:#fa8dfe;
+}
+
+.second-nav ul li a{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:1.125em;
+	display:block;
+	width:33.33%;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	margin:5px auto;
+}
+
+.second-nav ul li a:hover{
+	font-family: 'Josefin Sans', sans-serif;
+	color:#fa8dfe;
+}
+
+.nav-trigger, label[for="nav-trigger"], .nav-item a{
+	visibility:hidden;
+}
+
+footer{
+	text-align:center;
+	font-family: 'Dancing Script', cursive;
+	height:45px;
+	line-height:45px;
+	border-top: solid 1px #6d6d6d;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width:320px) and (max-width:746px){
+
+	#wrapper{
+		width:96.875%;
+		margin:0 auto;
+	}
+
+	p{
+		font-family: 'Abel', Arial, sans-serif;
+		font-size:1em;
+		line-height:1.875em;
+		margin-top:10px;
+		height:85px;
+		overflow:hidden;
+		text-overflow: clip ellipsis;
+	}
+
+	.header-text{
+		font-size:5em;
+		margin-left:30px;
+	}
+
+	.main{
+		width:90.625%;
+		margin:0 auto;
+		float:none;
+	}
+
+	.side{
+		display:none;
+	}
+
+	.page-content{
+		width:90.625%;
+		margin:0 auto;
+		float:none;
+		overflow:visible;
+	}
+
+	.page-content p{
+		height:auto;
+	}
+
+	.nav-trigger, label[for="nav-trigger"], .nav-item a{
+		visibility:visible;
+	}
+
+	.navigation{
+		list-style:none;
+		background-color:#111;
+		width:100%;
+		height:100%;
+		position:fixed;
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		z-index:0;
+	}
+
+.site-wrap{
+		min-width: 100%;
+		min-height:100%;
+		background-color:#fff;
+		position:relative;
+		top:0;
+		bottom:100%;
+		left:0;
+		z-index:1;
+	}
+
+.nav-trigger{
+		position: absolute;
+		clip: rect(0,0,0,0);
+	}
+
+label[for="nav-trigger"]{
+		position:absolute;
+		top:80px;
+		left:5.893%;
+		z-index:2;
+		width:30px;
+		height:30px;
+		cursor:pointer;
+		background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+		background-size:contain;
+	}
+
+.nav-trigger:checked + label{
+		left:215px;
+	}
+
+.nav-trigger:checked ~ .site-wrap{
+		left:200px;
+		box-shadow:0 0 5px 5px rgba(0,0,0,0.5);
+	}
+
+.nav-trigger+label, .site-wrap{
+		transition: left 0.2s;
+	}
+
+body{
+		overflow-x:hidden;
+	}
+
+.nav-item a{
+		display:block;
+		max-width:200px;
+		font-size:1.125em;
+		height:50px;
+		line-height:50px;
+		text-align:center;
+		color:#FFF;
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+.nav-item a:hover{
+		background-color:#222;
+		font-family: 'Josefin Sans', sans-serif;
+		color:#fa8dfe;
+	}
+
+}
+
+@media only screen and (min-width:747px) and (max-width:1046px){
+	#wrapper{
+		width:98.336%;
+		margin:0 auto;
+	}
+
+	p{
+		font-family: 'Abel', Arial, sans-serif;
+		font-size:1.125em;
+		line-height:1.875em;
+		margin-top:10px;
+	}
+
+	.author-img{
+		border-radius:300px;
+		height:auto;
+	}
+
+	.blurb{
+		font-size:1em;
+		line-height:1.25em;
+	}
+}
+}
